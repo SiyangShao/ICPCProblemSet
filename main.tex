@@ -1,0 +1,75 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[a4paper]{report}
+\usepackage{cite}
+\usepackage{CJKutf8}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{indentfirst} 
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{xspace}
+\usepackage{listings}
+\setlength{\parindent}{2em}
+\usepackage{algorithm}  
+\usepackage{algorithmicx}  
+\usepackage{algpseudocode}
+
+\addtolength{\topmargin}{-54pt}
+\setlength{\oddsidemargin}{0.33cm}  % 3.17cm - 1 inch
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{14.66cm}
+\setlength{\textheight}{24.00cm}    % 24.62
+
+\newtheorem{definition}{定义}[section]
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{cproof}{证明}[section]
+\newtheorem{notation}{记号}[section]
+\newtheorem{property}{性质}[section]
+\newtheorem{corollary}{推论 }[section] 
+
+\newenvironment{problem}{
+\newcommand\title[2]{\noindent\textbf{##1}  [\emph{##2}]}
+\newcommand\discription[1]{\textbf{题目描述} {##1}}
+\newcommand\keywords[1]{\textbf{题目类型} {##1}}
+\newcommand\solution[1]{\textbf{题目分析} {##1}}}
+
+\newenvironment{exprob}{
+\scriptsize
+}
+
+
+\newcommand{\ptitle}[2]{\noindent\textbf{#1}  [\emph{#2}] \par}
+\newcommand{\prob}{\textbf{题目描述}\;}
+\newcommand{\sol}{\par \textbf{题目分析}\;}
+\newcommand{\mypara}[1]{\paragraph{#1}\mbox{}\\}
+
+%%% 自定义宏
+\def\indent{\hspace{20pt}}
+\geometry{a4paper,left=2cm,right=2cm,top=1.5cm,bottom=1.5cm}
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+
+\title{ICPC Problem Set}
+\author{NTRLover}
+\date{2023.12.11}
+
+\maketitle
+
+\input{solutions/index}
+\input{summary}
+
+\end{CJK*}
+\end{document}
+
+
