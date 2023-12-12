@@ -1,0 +1,6 @@
+\section{POI}
+
+\ptitle{Step Traversing a Tree}{pufanyi}
+
+\prob 给你一棵 $n$ 个点的树，构造一个长度为 $n$ 的 $permutation$，使得 $\forall i, \mathrm{dist}\left\{p_i, p_{i+1}\right\}\le 3$。
+\sol $f_u$ 从 $u$ 开始，到 $u$ 的一个叶子节点结束,遍历以 $u$ 为根子的答案树;$g_u$ 表示从 $u$ 的一个叶子节点开始，到 $u$ 结束遍历以 $u$ 为根子树的答案。发现两者可以相互递归调用。
